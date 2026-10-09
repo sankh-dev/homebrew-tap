@@ -3,9 +3,9 @@
 cask "sankh-desktop" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.6.0"
-  sha256 arm:   "ab3864c4c18eea5f7a96643e6dfd10bbdfb1841ce6878c24546f40cd8231a439",
-         intel: "41e675933498e9c8ee0292cd002abc349bb68ebcb6474f3abde4c134fb5c7e90"
+  version "0.6.1"
+  sha256 arm:   "6273e4411dfa39afc186336f1edeb04b6b84a49fe5c036f538cb6369f38ebc50",
+         intel: "7794365028fe04e8e6e55daeca1d9eab3d955b878b500a5d7aeae6d47492b449"
 
   url "https://github.com/sankh-dev/sankh/releases/download/v#{version}/Sankh_#{version}_#{arch}.dmg"
   name "Sankh"
