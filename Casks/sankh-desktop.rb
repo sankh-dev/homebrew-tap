@@ -3,13 +3,13 @@
 cask "sankh-desktop" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.10.1"
-  sha256 arm:   "64b46d4750a725e83e1964bf96bafb34f9267151140ed25dcdf8c821fc8a4c9c",
-         intel: "ba597a8b7309100e7168cd4e0e61de905b0f0a1a9e1cb9abc71bd79b7db6d568"
+  version "0.11.0"
+  sha256 arm:   "5afe02a628443c369967e321f690a0169ea32168a9c5fc17d2a693bc7aa34e78",
+         intel: "e63b6fd88aaf99cadfa3b2c237b3cbb6d9c779ebfd464176650407c778c93966"
 
   url "https://github.com/sankh-dev/sankh/releases/download/v#{version}/Sankh_#{version}_#{arch}.dmg"
   name "Sankh"
-  desc "Lightweight request manager where each request is a curl script"
+  desc "Lightweight request manager where each request is a curl command"
   homepage "https://sankh.dev/"
 
   livecheck do
@@ -28,7 +28,7 @@ cask "sankh-desktop" do
         args: ["-dr", "com.apple.quarantine", "{{appdir}}/Sankh.app"]
   end
 
-  # The workspace, trust store and Scratch live in ~/Library/Application Support/sankh
+  # The workspace and Scratch live in ~/Library/Application Support/sankh
   # and are shared with the `sankh` CLI, so they are deliberately not removed.
   zap trash: [
     "~/Library/Application Support/dev.sankh.app",
