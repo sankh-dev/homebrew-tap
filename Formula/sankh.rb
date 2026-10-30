@@ -1,25 +1,25 @@
 class Sankh < Formula
   desc "Blow the conch. Run your APIs. A folder of curl files as an API collection."
   homepage "https://sankh.dev"
-  version "0.11.0"
+  version "0.12.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/sankh-dev/sankh/releases/download/v0.11.0/sankh-aarch64-apple-darwin.tar.xz"
-      sha256 "e1604db5935900fc1f246ed64be38135b12f4a3c785c61406d3fdfc2034fd748"
+      url "https://github.com/sankh-dev/sankh/releases/download/v0.12.0/sankh-aarch64-apple-darwin.tar.xz"
+      sha256 "13dcebee11f9925cc374f6dddcbb115e5853c8000491ef21d0bb9da2334fd274"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sankh-dev/sankh/releases/download/v0.11.0/sankh-x86_64-apple-darwin.tar.xz"
-      sha256 "64641356c7984fdfcdbfe6df258ebaa127e91f7d4a88ebbb4a918dee33ec3df6"
+      url "https://github.com/sankh-dev/sankh/releases/download/v0.12.0/sankh-x86_64-apple-darwin.tar.xz"
+      sha256 "4531d92266e9b0c7e59e55a8bbdc6e79458903cda2b4a06ba4868796f82280fa"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/sankh-dev/sankh/releases/download/v0.11.0/sankh-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a3ff51734090be4df5046fd6f699f892281da756cb07be4a0b3bca48b6fa96ef"
+      url "https://github.com/sankh-dev/sankh/releases/download/v0.12.0/sankh-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2ac29ffda4552a0f54230ef0bb23ca35ab356d920cddc53acc0c15b4a02552d3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sankh-dev/sankh/releases/download/v0.11.0/sankh-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f82f363cbf7536f19d121da15b4b4aef3b92db32cc19cd779310103d56992476"
+      url "https://github.com/sankh-dev/sankh/releases/download/v0.12.0/sankh-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a103d3bd8513b1b549c8a435f1d7f765c2a2e69a5e84ea7ef38a2c27069ab44e"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
